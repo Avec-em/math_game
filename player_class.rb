@@ -1,13 +1,13 @@
 class Player
+  attr_accessor :id, :num_lives
 
   def initialize(id)
     @id = id
-    @number_of_lives = 3
+    @num_lives = 3
   end
 
-  def life_lost(id)
-    @number_of_lives -= 1
-    @number_of_lives
+  def life_lost
+    @num_lives -= 1
   end
 
 end

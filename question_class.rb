@@ -1,3 +1,5 @@
+require_relative "player_class"
+
 class Question
 
   def initialize
@@ -6,11 +8,11 @@ class Question
   end
 
   def new_question
-    puts "what is #{@first} + #{@second}?"
+    puts "What is #{@first} + #{@second}?"
   end
 
   def answer
-    puts @first + @second
+    return @first + @second
   end
 
 end
